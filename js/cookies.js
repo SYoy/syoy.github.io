@@ -20,10 +20,10 @@ window.addEventListener("load", function(){
         "position": "bottom-right",
         "type": "opt-in",
         "content": {
-        "message": "Wir verwenden Cookies &#x1F36A; um die bestmögliche Nutzererfahrung für Sie zu generieren und die vollständige Funktion der Website zu gewährleisten. Sind Sie damit einverstanden?",
-        "deny": "Ablehnen",
-        "allow": "Akzeptieren",
-        "link": "Mehr erfahren",
+        "message": "This website uses cookies &#x1F36A; to ensure you get the best experience on our website.",
+        "deny": "Deny",
+        "allow": "Allow",
+        "link": "More information on cookies",
         "href": "https://cookiesandyou.com/"
         },
         onStatusChange: function(status, chosenBefore) {
