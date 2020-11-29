@@ -4,11 +4,12 @@
 <head>
 
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Resume Page · CV ">
+  <title>Marius Steger · Resume</title>
+  <meta name="description" content="Resume Page · CV · Project Portfolio">
   <meta name="author" content="Marius Steger">
-
-  <title>Website · Marius Steger · Resume</title>
+  <meta name="keywords" content="HTML, CSS, JavaScript, Webdesign, Karlsruhe, Germany, BW, Grötzingen, Groetzingen, Freelancer, ML, DL,
+  Machine Learning, Deep Learning, Marius Steger, Marius, Steger, ai, raccoons, love raccoon, AI, AIs">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -21,47 +22,14 @@
 
   <!-- Custom styles for this template  -->
   <link rel="stylesheet" href="css/css_vert_timeline/style.css">
-  <link href="css/resume.min.css" rel="stylesheet">
+  <link href="css/resume.css" rel="stylesheet">
+  <link href="css/button.css" rel="stylesheet">
 
   <script>document.getElementsByTagName("html")[0].className += " js";</script>
-  <style>
-    .bg-primary {
-      background-color: #A9B4C2 !important
-    }
-
-    .text-primary {
-      color: #3C7A89 !important
-    }
-
-    a {
-      color: #3C7A89
-    }
-
-    a:active, a:focus, a:hover {
-      color: #2E4756
-    }
-
-    .dev-icons .list-inline-item i:hover {
-      color: #2E4756
-    }
-
-    .social-icons a:hover {
-      background-color: #2E4756
-    }
-
-    .col-md-6 {
-    -ms-flex: 0 0 49%;
-    flex: 0 0 49%;
-    max-width: 49%;
-  }
-  .subheading-2 {
-    text-transform: uppercase;
-    font-weight: 500;
-    font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-    font-size: 2rem
-}
-  </style>
-  <style> .carousel-inner > .item > img{ width: 95%; height: auto; } </style>
+    <!-- Cookie Consent -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+  <script src="js/cookies.js"></script>
 </head>
 
 <body id="page-top">
@@ -115,8 +83,11 @@
         <div class="subheading mb-5">76229 Karlsruhe · <a href="mailto:marius.steger@web.de">marius.steger@web.de</a>
         </div>
         <p class="lead mb-5">Welcome to my personal website which serves the purpose of a resume.
-          I am an engineering masters college student at the Karlsruhe Institute of Technology with huge interest in Machine Learning and Medicine Technology.
-          Feel free to look around. You can also reach out to me via eMail. Last Update: March 2020.</p>
+          I am an engineering masters college student at the Karlsruhe Institute of Technology with huge interest in Machine Learning, Robotics and Medicine Technology.
+        </p>
+        <p class="lead mb-5">
+          Check out my new business: <a href="http://www.ailovesraccoons.com/" style="text-decoration: none">AI loves raccoons</a>
+        </p>
         <div class="social-icons">
           <a href="https://www.linkedin.com/in/marius-steger-367045164/">
             <i class="fab fa-linkedin-in"></i>
@@ -124,10 +95,6 @@
           <a href="https://github.com/SYoy">
             <i class="fab fa-github"></i>
           </a>
-          <!--
-          <a href="#">
-            <i class="fab fa-twitter"></i>
-          </a> -->
         </div>
       </div>
     </section>
@@ -141,7 +108,27 @@
         <div class="cd-timeline__block">
           <div class="cd-timeline__img cd-timeline__img--picture">
             <!--<img src="img/" alt=""> -->
-          </div> <!-- TODO: Icons -->
+          </div>
+
+          <div class="cd-timeline__content text-component">
+            <h3 class="mb-0">Web development & ML Expertise</h3>
+            <a href="http://www.ailovesraccoons.com/" class="subheading mb-3">AI loves raccoons · Freelancing</a>
+            <p class="color-contrast-medium">
+              Early in 2019 I started freelancing by working on web development projects. In October 2020 after several completed projects I started my own business as freelancer for Web Development and
+              Machine Learning / Data Science consultation.
+            </p>
+
+            <div class="flex justify-between items-center">
+              <span class="cd-timeline__date">Oct 2020 - today</span>
+              <!-- <a href="#0" class="btn btn--subtle">BUTTON!</a> -->
+            </div>
+          </div> <!-- cd-timeline__content -->
+        </div>
+
+        <div class="cd-timeline__block">
+          <div class="cd-timeline__img cd-timeline__img--picture">
+            <!--<img src="img/" alt=""> -->
+          </div>
 
           <div class="cd-timeline__content text-component">
             <h3 class="mb-0">Research Assistant</h3>
@@ -159,6 +146,7 @@
             </div>
           </div> <!-- cd-timeline__content -->
         </div> <!-- cd-timeline__block -->
+
 
         <div class="cd-timeline__block">
           <div class="cd-timeline__img cd-timeline__img--picture">
@@ -236,7 +224,8 @@
             <div class="subheading mb-3">Master of Science</div>
             <div>Mechanical Engineering -
                   Specialization: Medicine Technology & Robotics</div><br>
-            <div>Favourite Subject: Brain and Central Nervesystem</div>
+            <div>Favourite Subjects: Robotics, Brain and Central Nervesystem</div>
+            <div>Projects: Mechatronics Workshop</div>
             <!--<p>Grad: ?.?</p> -->
             <br>
           </div>
@@ -366,42 +355,183 @@
 
     <hr class="m-0">
 
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-baseline" id="interests" style="min-height: 100vh; max-width: 100rem;">
-        <div class="w-100">
-          <h2 class="mb-5">Projects</h2>
+<!--    <section class="resume-section p-3 p-lg-5 d-flex align-items-baseline" id="interests" style="min-height: 100vh; max-width: 100rem;">-->
+<!--        <div class="w-100">-->
+<!--          <h2 class="mb-5">Projects</h2>-->
 
-          <div class="row">
-            <div class="col-md-12" style="background: rgba(99,218,233,0.2); border-radius: 20px; text-align: center; margin: 0px;">
-              <div class="row justify-content-center">
-              <h3 class="subheading-2 mb-3" style="margin-top: 25px">coding</h3>
-              <h3 class="subheading-2 mb-3" style="margin-top: 25px; margin-left: 1rem; margin-right: 1rem">·</h3>
-              <h3 class="subheading-2 mb-3" style="margin-top: 25px">inventing</h3>
-              <h3 class="subheading-2 mb-3" style="margin-top: 25px; margin-left: 1rem; margin-right: 1rem">·</h3>
-              <h3 class="subheading-2 mb-3" style="margin-top: 25px">rapid prototyping</h3>
-              </div>
-              <br>
-              <p>
-                I am into experimenting with RaspberryPis which allows me to easily set up prototypes and try out new ideas.
-              </p>
-              <p>
-                I am also working on coding and data science projects in my free time.
-              </p>
-              <br>
-              <ul class="fa-ul">
-                <li style="margin: 20px 0;"><i class="fab fa-li fa-js" style="text-align: left"></i><i class="fab fa-li fa-python" style="text-align: right"></i><b>Grocery Shopping WebApp (Covid-19; <a href="https://www.rauenberg-hilft.de/">deployed</a>)</b></li>
-                <li style="margin: 20px 0;"><i class="fab fa-li fa-js" style="text-align: left"></i><b>Interactive SIR-Simulation (Covid-19; <a href="https://organizedml.github.io/sir-playground/">deployed</a>)</b></li>
-                <li style="margin: 20px 0;"><i class="fab fa-li fa-raspberry-pi" style="text-align: left"></i><i class="fab fa-li fa-js" style="text-align: right"></i><b>School Info-Hub with agenda WebApp (deployed)</b></li>
-                <li style="margin: 20px 0;"><i class="fab fa-li fa-kaggle" style="text-align: left"></i><i class="fab fa-li fa-python" style="text-align: right"></i><b>Kaggle Competitions & Data Exploration notebooks</b></li>
-                <li style="margin: 20px 0;"><i class="fab fa-li fa-kaggle" style="text-align: left"></i><i class="fab fa-li fa-python" style="text-align: right"></i><b>Machine Learning Hackathons</b></li>
-                <li style="margin: 20px 0;"><i class="fab fa-li fa-css3"></i><b>Webdesign (e.g. this page)</b></li>
-                <li style="margin: 20px 0;"><i class="fab fa-li fa-raspberry-pi" style="text-align: left"></i><i class="fab fa-li fa-python" style="text-align: right"></i><b>Smart gardening system with WebApp</b></li>
-                <li style="margin: 20px 0;"><i class="fab fa-li fa-raspberry-pi"></i><b>6 dof robot arm (early stage)</b></li>
-                <li style="margin: 20px 0;"><i class="fab fa-li fa-raspberry-pi" style="text-align: left"></i><i class="fab fa-li fa-python" style="text-align: right"></i><b>Following webcam</b></li>
-              </ul>
-            </div>
-          </div>
+<!--          <div class="row justify-content-center" style="margin-top: 10px">-->
+<!--              <h3 class="subheading-2 mb-3" style="">coding</h3>-->
+<!--              <h3 class="subheading-2 mb-3" style="margin-left: 1rem; margin-right: 1rem">·</h3>-->
+<!--              <h3 class="subheading-2 mb-3" style="">inventing</h3>-->
+<!--              <h3 class="subheading-2 mb-3" style="margin-left: 1rem; margin-right: 1rem">·</h3>-->
+<!--              <h3 class="subheading-2 mb-3" style="">rapid prototyping</h3>-->
+<!--          </div>-->
+
+<!--          <div class="row">-->
+<!--            <div class="col-md-12" style="background: rgba(99,218,233,0.2); border-radius: 20px; text-align: center; margin: 0px;">-->
+<!--              <br>-->
+<!--              <p>-->
+<!--                I am into experimenting with <b>RaspberryPis</b> which allows me to easily set up prototypes and try out new ideas.<br>-->
+<!--                I am also working on <b>coding</b> and <b>data science</b> projects in my free time and participate in <b>Hackathons</b> and <b>Kaggle Competitions</b>.-->
+<!--              </p>-->
+<!--              <br>-->
+
+<!--              <div class="row features" style="justify-content: space-around">-->
+<!--                <div class="col-sm-6 col-lg-4 item" style="margin-bottom: 3rem">-->
+<!--                    <i class="fab fa-li fa-js" style="text-align: left; margin-left: 5rem"></i><i class="fab fa-li fa-python" style="text-align: right; margin-left: 5rem"></i>-->
+<!--                    <h3 class="name">Grocery Shopping WebApp</h3>-->
+<!--                    <h4>(Covid-19; &lt;!&ndash; <a href="https://www.rauenberg-hilft.de/">deployed</a>!&ndash;&gt; deployed)</h4>-->
+<!--                    <p class="description">Neighboorhod Aid App</p>-->
+<!--                    <p>You were able to set up help requests and/or undertake them on a blackboard.</p>-->
+<!--                </div>-->
+<!--                <div class="col-sm-6 col-lg-4 item" style="margin-bottom: 3rem">-->
+<!--                    <i class="fab fa-li fa-js" style="text-align: left; margin-left: 5rem"></i>-->
+<!--                    <h3 class="name">Interactive SIR-Simulation</h3>-->
+<!--                    <h4>(Covid-19; <a href="https://organizedml.github.io/sir-playground/">deployed</a>)</h4>-->
+<!--                    <p class="description"> Agent-based simulation WebApp </p>-->
+<!--                    <p> A agent-based visual SIR-Simulation playground with online parameter tuning</p>-->
+<!--                </div>-->
+<!--                <div class="col-sm-6 col-lg-4 item" style="margin-bottom: 3rem">-->
+<!--                    <i class="fab fa-li fa-raspberry-pi" style="text-align: left; margin-left: 3rem"></i><i class="fab fa-li fa-js" style="text-align: right; margin-left: 3rem"></i>-->
+<!--                    <h3 class="name">Agenda - Info-Hub for schools</h3>-->
+<!--                  <h4>Singlepage WebApp (deployed)</h4>-->
+<!--                    <p class="description">todo</p>-->
+<!--                </div>-->
+<!--                <div class="col-sm-6 col-lg-4 item">-->
+<!--                    <i class="fab fa-li fa-raspberry-pi" style="text-align: left; margin-left: 5rem"></i><i class="fab fa-li fa-python" style="text-align: right; margin-left: 5rem"></i>-->
+<!--                    <h3 class="name">Smart gardening</h3>-->
+<!--                    <h4>WebApp and Construction</h4>-->
+<!--                    <p class="description">todo</p>-->
+<!--                </div>-->
+<!--                <div class="col-sm-6 col-lg-4 item">-->
+<!--                    <i class="fab fa-li fa-css3" style="text-align: left; margin-left: 5rem"></i>-->
+<!--                    <i class="fab fa-li fa-js" style="text-align: left; margin-left: 5rem"></i>-->
+<!--                    <i class="fab fa-li fa-python" style="text-align: right; margin-left: 5rem"></i>-->
+
+<!--                    <h3 class="name">Webdesign</h3>-->
+<!--                    <h4>Bootstrap - React - Django - Flask</h4>-->
+<!--                    <p class="description">todo</p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--    </section>-->
+
+    <div class="container-fluid" id="interests">
+    <!-- Demo header-->
+    <section class="py-5 header text-center" id="header_projects_engineering">
+        <div class="container py-4">
+            <header>
+                <h1 class="display-4">Engineering and ML Projects</h1>
+                <p class="font-italic text-muted mb-1">Summary of completed and current projects</p>
+            </header>
         </div>
     </section>
+
+    <section class="pb-5" id="projects_engineering">
+        <div class="container text-center">
+            <!-- Masonry grid -->
+            <div class="gallery-wrapper">
+                <!-- Grid sizer -->
+                <div class="grid-sizer col-lg-4 col-md-6"></div>
+
+                <!-- Grid item -->
+                <div class="col-lg-4 col-md-6 grid-item mb-4">
+                    <img class="img-fluid w-100 mb-3 img-thumbnail shadow-sm rounded-0" src="img/projects/b588L1sZHy0-unsplash_prototyping.jpg" alt="Soundsgoodagency Website">
+                    <h4>Prototype: Tracker</h4>
+                    <h5>Medicine Technology</h5>
+                    <p class="small text-muted font-italic">Designing a new tracker for computer assisted operations and conducting a feasibility study.</p>
+                </div>
+
+                <!-- Grid item -->
+                <div class="col-lg-4 col-md-6 grid-item mb-4">
+                    <img class="img-fluid w-100 mb-3 img-thumbnail shadow-sm rounded-0" src="img/projects/taiuG8CPKAQ-unsplash_python_programming.jpg" alt="Abschied und Neubeginn Website">
+                    <h4>CAD-Geometry classification</h4>
+                    <h5>geometric deep learning</h5>
+                    <p class="small text-muted font-italic">Benchmarking different kind of geometric deep learning approaches on real and synthetic CAD-Model datasets.</p>
+                </div>
+
+                <!-- Grid item -->
+                <div class="col-lg-4 col-md-6 grid-item mb-4">
+                    <img class="img-fluid w-100 mb-3 img-thumbnail shadow-sm rounded-0" src="img/projects/lsdyna.PNG" alt="Abschied und Neubeginn Website">
+                    <h4>similarity measurement</h4>
+                    <h5>geometric deep learning</h5>
+                    <p class="small text-muted font-italic">Similarity measurement and prediction of intrusion values in crash simulations. What-If-Analysis</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+
+    <section class="py-5 header text-center" id="header_projects_web">
+        <div class="container py-4">
+            <header>
+                <h1 class="display-4">WebDev & Design Projects</h1>
+                <p class="font-italic text-muted mb-1">A brief abstract of my web design portfolio.</p>
+            </header>
+        </div>
+    </section>
+
+    <section class="pb-5" id="projects_web">
+        <div class="container text-center">
+            <!-- Masonry grid -->
+            <div class="gallery-wrapper">
+                <!-- Grid sizer -->
+                <div class="grid-sizer col-lg-4 col-md-6"></div>
+
+                <!-- Grid item -->
+                <div class="col-lg-4 col-md-6 grid-item mb-4">
+                    <img class="img-fluid w-100 mb-3 img-thumbnail shadow-sm rounded-0" src="img/projects/soundsgoodagency_2.PNG" alt="Soundsgoodagency Website">
+                    <h4>soundsgoodagency</h4>
+                    <h5>Webdesign: music agency</h5>
+                    <p class="small text-muted font-italic">Online promotion and PR for artists and festivals.</p>
+                    <div class="wrapper" style="margin-left: auto; margin-right: auto">
+                      <a href="https://soundsgoodagency.com/main"><span>Link</span></a>
+                    </div>
+                </div>
+
+                <!-- Grid item -->
+                <div class="col-lg-4 col-md-6 grid-item mb-4">
+                    <img class="img-fluid w-100 mb-3 img-thumbnail shadow-sm rounded-0" src="img/projects/abschiedundneubeginn_2.PNG" alt="Abschied und Neubeginn Website">
+                    <h4>abschiedundneubeginn</h4>
+                    <h5>Webdesign: fashion label</h5>
+                    <p class="small text-muted font-italic">A online store for sustainable fashion and handcrafted presents.</p>
+                    <div class="wrapper" style="margin-left: auto; margin-right: auto">
+                      <a href="https://abschiedundneubeginn.com/"><span>Link</span></a>
+                    </div>
+                </div>
+
+                <!-- Grid item -->
+                <div class="col-lg-4 col-md-6 grid-item mb-4">
+                    <img class="img-fluid w-100 mb-3 img-thumbnail shadow-sm rounded-0" src="img/projects/7lvzopTxjOU-unsplash_aid.jpg" alt="neighborhood aid stock photo">
+                    <h4>rauenberg-hilft</h4>
+                    <h5>WebApp: grocery shopping</h5>
+                    <p class="small text-muted font-italic">Web-app for care takers. Give and/or receive help amid turbulent times. Not in use anymore</p>
+                </div>
+
+                <!-- Grid item -->
+                <div class="col-lg-4 col-md-6 grid-item mb-4">
+                    <img class="img-fluid w-100 mb-3 img-thumbnail shadow-sm rounded-0" src="img/projects/i6H96chOdCU-unsplash_hub.jpg" alt="Info Hub stock photo">
+                    <h4>Info-hub</h4>
+                    <h5>WebApp: School</h5>
+                    <p class="small text-muted font-italic">A school info hub with timetable and news - developed as web-app. Deployed @ after schools</p>
+                </div>
+
+                <!-- Grid item -->
+                <div class="col-lg-4 col-md-6 grid-item mb-4">
+                    <img class="img-fluid w-100 mb-3 img-thumbnail shadow-sm rounded-0" src="img/projects/sir.PNG" alt="SIR Simulation">
+                    <h4>Interactive SIR-Simulation</h4>
+                    <h5>WebApp: agent based simulation</h5>
+                    <p class="small text-muted font-italic">A agent-based visual SIR-Simulation playground with online parameter tuning</p>
+                    <div class="wrapper" style="margin-left: auto; margin-right: auto">
+                      <a href="https://organizedml.github.io/sir-playground/"><span>Link</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
 
   </div>
 
@@ -415,6 +545,10 @@
   <!-- Custom scripts for this template -->
   <script src="js/resume.min.js"></script>
   <script src="js/vertical_timeline.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+  <script src="https://unpkg.com/imagesloaded@4.1.4/imagesloaded.pkgd.min.js"></script>
+  <script src="js/masonry.js"></script>
 
 </body>
 
