@@ -1,0 +1,52 @@
+if (document.cookie.split(';').filter(function(item) {
+    return item.indexOf('cookieconsent_status=allow') >= 0
+}).length && (navigator.doNotTrack != 1 && navigator.doNotTrack != "yes" && window.doNotTrack != 1 && navigator.msDoNotTrack != 1)) {
+    loadGAonConsent();
+}
+
+window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+        "palette": {
+            "popup": {
+              "background": "#eaf7f7",
+              "text": "#5c7291"
+            },
+            "button": {
+              "background": "#56cbdb",
+              "text": "#ffffff"
+            }
+          },
+        "theme": "edgeless",
+        "position": "bottom-right",
+        "type": "opt-in",
+        "content": {
+        "message": "Wir verwenden Cookies &#x1F36A; um die bestmögliche Nutzererfahrung für Sie zu generieren und die vollständige Funktion der Website zu gewährleisten. Sind Sie damit einverstanden?",
+        "deny": "Ablehnen",
+        "allow": "Akzeptieren",
+        "link": "Mehr erfahren",
+        "href": "https://cookiesandyou.com/"
+        },
+        onStatusChange: function(status, chosenBefore) {
+            var type = this.options.type;
+            var didConsent = this.hasConsented();
+            if (type == 'opt-in' && didConsent) {
+            // enable cookies
+            loadGAonConsent();
+            }
+        }
+    })
+});
+
+function loadGAonConsent(){
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-PSC40S5SPE');
+  gtag('set', 'anonymizeIp', true);
+  gtag('send', 'pageview');
+
+  var gascript = document.createElement("script");
+  gascript.async = true;
+  gascript.src = "https://www.googletagmanager.com/gtag/js?id=G-PSC40S5SPE";
+  document.getElementsByTagName("head")[0].appendChild(gascript, document.getElementsByTagName("head")[0]);
+}
