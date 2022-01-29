@@ -8,11 +8,11 @@ window.addEventListener("load", function(){
     window.cookieconsent.initialise({
         "palette": {
             "popup": {
-              "background": "#eaf7f7",
+              "background": "#A9B4C2",
               "text": "#5c7291"
             },
             "button": {
-              "background": "#56cbdb",
+              "background": "#2E4756",
               "text": "#ffffff"
             }
           },
@@ -20,7 +20,7 @@ window.addEventListener("load", function(){
         "position": "bottom-right",
         "type": "opt-in",
         "content": {
-        "message": "This website uses cookies &#x1F36A; to ensure you get the best experience on our website.",
+        "message": "This website uses cookies &#x1F36A; to ensure that you get the best experience possible.",
         "deny": "Deny",
         "allow": "Allow",
         "link": "More information on cookies",
